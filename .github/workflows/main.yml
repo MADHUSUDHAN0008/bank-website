@@ -1,0 +1,22 @@
+name: Bank CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Build
+      run: echo "Building Bank App"
+
+    - name: Test
+      run: echo "Testing Bank App"
+
+    - name: Deploy
+      run: echo "Deploying..."
