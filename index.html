@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to My Bank</h1>
+
+<div class="container">
+  <h2>Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+
+  <h2>Balance</h2>
+  <p id="balance">₹0</p>
+
+  <h2>Deposit</h2>
+  <input type="number" id="depositAmount">
+  <button onclick="deposit()">Deposit</button>
+
+  <h2>Withdraw</h2>
+  <input type="number" id="withdrawAmount">
+  <button onclick="withdraw()">Withdraw</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
